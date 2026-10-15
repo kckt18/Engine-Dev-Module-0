@@ -82,12 +82,23 @@ class LinkedList {
             Node* prev = nullptr;
             Node* nextnode = nullptr;
 
+            if (head == nullptr) {
+                cout << "You tried reversing an empty list!" << endl;
+                return;
+            } 
+            else if (head->next == nullptr) {
+                cout << "Your list has just one node!" << endl;
+                return;
+            }
+
             while (curr!= nullptr) {
                 nextnode = curr->next;
                 curr->next = prev;
                 prev = curr;
                 curr = nextnode;
             }
+
+            head = prev;
         }
 };
 
@@ -106,13 +117,13 @@ int main() {
         list.pushFront(x);
     }
 
-    // cout << "Enter the number you want to remove: ";
-    // int y;
-    // cin >> y;
-    // list.remove(y);
+    cout << "Enter the number you want to remove: ";
+    int y;
+    cin >> y;
+    list.remove(y);
 
-    // if (n!=0) cout << "Final list is: " << endl;
-    // list.print();
+    if (n!=0) cout << "Final list is: " << endl;
+    list.print();
 
     list.reverse();
     list.print();
