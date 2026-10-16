@@ -28,5 +28,11 @@ int main () {
 //other problems I did: removing last set bit (rightmost); clearing the ith bit; checking if the ith bit is set;
 //toggling a bit; setting the ith bit; (only this problem is here because it doesn't have one liner as a sol)
 
+    //ith bit is set: if (n&(1<<i) != 0)
+    //clear ith bit: n&(~(1<<i))
+    //check: if (n&(1<<i) != 0) 
+    //toggle: N^(1<<i)
+
+
     return 0;
 }
