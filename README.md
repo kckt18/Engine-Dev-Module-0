@@ -7,6 +7,8 @@ LinkedList.cpp: This was part of the module 0 part 0. Here I have implemented al
 What I've built: Tic-Tac-Toe game with getMove(); printBoard(); placeMark(); checkWin().
 The hardest part was linking all of it together in the main with a while loop. 
 
+Finally: I have made a CMakeLists.txt file through which a game is generated using all the .h and .cpp pairs.
+
 What I learnt: 
 -> (~, |, &, ^, <<, >>) Bitwise operators
 -> Bit Manipulation
